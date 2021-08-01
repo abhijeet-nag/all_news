@@ -1,0 +1,176 @@
+{
+  "हिंदी": [
+    {
+      "id": 1,
+      "name": "Inshort",
+      "url": "https://www.inshorts.com/hi/read",
+      "image": "images/news/hindi/inshort.png"
+    },
+    {
+      "id": 2,
+      "name": "Aaj Tak",
+      "url": "https://www.aajtak.in/",
+      "image": "images/news/hindi/aajtak.png"
+    },
+    {
+      "id": 3,
+      "name": "Dainik Bhaskar",
+      "url": "https://www.bhaskar.com/",
+      "image": "images/news/hindi/dainikbhaskar.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Dainik Jagran",
+      "url": "https://www.jagran.com/",
+      "image": "images/news/hindi/dainikjagran.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Amar Ujala",
+      "url": "https://www.amarujala.com/",
+      "image": "images/news/hindi/amarujala.png"
+    },
+    {
+      "id": 6,
+      "name": "Hindustan",
+      "url": "https://www.livehindustan.com/",
+      "image": "images/news/hindi/hindustan.png"
+    },
+    {
+      "id": 7,
+      "name": "Jansatta",
+      "url": "https://www.jansatta.com/",
+      "image": "images/news/hindi/jansatta.png"
+    },
+    {
+      "id": 8,
+      "name": "Nav Bharat Times",
+      "url": "https://navbharattimes.indiatimes.com/",
+      "image": "images/news/hindi/nbt.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Republic TV Bharat",
+      "url": "https://bharat.republicworld.com/livetv",
+      "image": "images/news/hindi/rtvbharat.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Zee News",
+      "url": "https://zeenews.india.com/",
+      "image": "images/news/hindi/zeenews.png"
+    },
+    {
+      "id": 11,
+      "name": "ABP News",
+      "url": "https://www.abplive.com/",
+      "image": "images/news/hindi/abpnews.png"
+    },
+    {
+      "id": 12,
+      "name": "News 18 India",
+      "url": "https://www.news18.com/",
+      "image": "images/news/hindi/news18india.png"
+    },
+    {
+      "id": 13,
+      "name": "India TV",
+      "url": "https://www.indiatvnews.com/",
+      "image": "images/news/hindi/indiatv.jpg"
+    },
+    {
+      "id": 14,
+      "name": "News 24",
+      "url": "https://news24online.com/",
+      "image": "images/news/hindi/news24.jpg"
+    },
+    {
+      "id": 15,
+      "name": "TV9 Bharatvarsh",
+      "url": "https://www.tv9hindi.com/",
+      "image": "images/news/hindi/tv9bharatvarsha.png"
+    },
+    {
+      "id": 16,
+      "name": "News Nation",
+      "url": "https://www.newsnationtv.com/",
+      "image": "images/news/hindi/newsnation.png"
+    },
+    {
+      "id": 17,
+      "name": "NDTV",
+      "url": "https://ndtv.in/?pfrom=home-ndtv_header-globalnav",
+      "image": "images/news/hindi/ndtv.jpg"
+    },
+    {
+      "id": 18,
+      "name": "The Lanlantop",
+      "url": "https://www.thelallantop.com/",
+      "image": "images/news/hindi/lanllantop.webp"
+    }
+  ],
+  "English": [
+    {
+      "id": 1,
+      "name": "Inshort",
+      "url": "https://www.inshorts.com/en/read",
+      "image": "images/news/hindi/inshort.png"
+    },
+    {
+      "id": 2,
+      "name": "The Hindu",
+      "url": "https://www.thehindu.com/",
+      "image": "images/news/english/thehindu.png"
+    },
+    {
+      "id": 3,
+      "name": "The Indian Express",
+      "url": "https://indianexpress.com/",
+      "image": "images/news/english/theindianexpress.png"
+    },
+    {
+      "id": 4,
+      "name": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/latest-news",
+      "image": "images/news/english/hindustantimes.png"
+    },
+    {
+      "id": 5,
+      "name": "The Statesman",
+      "url": "https://www.thestatesman.com/",
+      "image": "images/news/english/statesman.png"
+    },
+    {
+      "id": 6,
+      "name": "The Economic Times",
+      "url": "https://economictimes.indiatimes.com/",
+      "image": "images/news/english/economictimes.png"
+    },
+    {
+      "id": 7,
+      "name": "BBC",
+      "url": "https://www.bbc.com/news",
+      "image": "images/news/english/bbc.png"
+    },
+    {
+      "id": 8,
+      "name": "CNBC",
+      "url": "https://www.cnbc.com/world/?region=world",
+      "image": "images/news/english/cnbc.jpg"
+    },
+    {
+      "id": 9,
+      "name": "CNN",
+      "url": "https://edition.cnn.com/",
+      "image": "images/news/english/cnn.jpg"
+    }
+  ],
+  "Tech": [
+    {
+      "id": 1,
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/",
+      "image": "images/category/techcrunch.png"
+    }
+  ]
+}
