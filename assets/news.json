@@ -4,103 +4,103 @@
       "id": 1,
       "name": "Inshort",
       "url": "https://www.inshorts.com/hi/read",
-      "image": "images/news/hindi/inshort.png"
+      "image": "images/news/hindi/inshort.webp"
     },
     {
       "id": 2,
       "name": "Aaj Tak",
       "url": "https://www.aajtak.in/",
-      "image": "images/news/hindi/aajtak.png"
+      "image": "images/news/hindi/aajtak.webp"
     },
     {
       "id": 3,
       "name": "Dainik Bhaskar",
       "url": "https://www.bhaskar.com/",
-      "image": "images/news/hindi/dainikbhaskar.jpg"
+      "image": "images/news/hindi/dainikbhaskar.webp"
     },
     {
       "id": 4,
       "name": "Dainik Jagran",
       "url": "https://www.jagran.com/",
-      "image": "images/news/hindi/dainikjagran.jpg"
+      "image": "images/news/hindi/dainikjagran.webp"
     },
     {
       "id": 5,
       "name": "Amar Ujala",
       "url": "https://www.amarujala.com/",
-      "image": "images/news/hindi/amarujala.png"
+      "image": "images/news/hindi/amarujala.webp"
     },
     {
       "id": 6,
       "name": "Hindustan",
       "url": "https://www.livehindustan.com/",
-      "image": "images/news/hindi/hindustan.png"
+      "image": "images/news/hindi/hindustan.webp"
     },
     {
       "id": 7,
       "name": "Jansatta",
       "url": "https://www.jansatta.com/",
-      "image": "images/news/hindi/jansatta.png"
+      "image": "images/news/hindi/jansatta.webp"
     },
     {
       "id": 8,
       "name": "Nav Bharat Times",
       "url": "https://navbharattimes.indiatimes.com/",
-      "image": "images/news/hindi/nbt.jpg"
+      "image": "images/news/hindi/nbt.webp"
     },
     {
       "id": 9,
       "name": "Republic TV Bharat",
       "url": "https://bharat.republicworld.com/livetv",
-      "image": "images/news/hindi/rtvbharat.jpg"
+      "image": "images/news/hindi/rtvbharat.webp"
     },
     {
       "id": 10,
       "name": "Zee News",
       "url": "https://zeenews.india.com/",
-      "image": "images/news/hindi/zeenews.png"
+      "image": "images/news/hindi/zeenews.webp"
     },
     {
       "id": 11,
       "name": "ABP News",
       "url": "https://www.abplive.com/",
-      "image": "images/news/hindi/abpnews.png"
+      "image": "images/news/hindi/abpnews.webp"
     },
     {
       "id": 12,
       "name": "News 18 India",
       "url": "https://www.news18.com/",
-      "image": "images/news/hindi/news18india.png"
+      "image": "images/news/hindi/news18india.webp"
     },
     {
       "id": 13,
       "name": "India TV",
       "url": "https://www.indiatvnews.com/",
-      "image": "images/news/hindi/indiatv.jpg"
+      "image": "images/news/hindi/indiatv.webp"
     },
     {
       "id": 14,
       "name": "News 24",
       "url": "https://news24online.com/",
-      "image": "images/news/hindi/news24.jpg"
+      "image": "images/news/hindi/news24.webp"
     },
     {
       "id": 15,
       "name": "TV9 Bharatvarsh",
       "url": "https://www.tv9hindi.com/",
-      "image": "images/news/hindi/tv9bharatvarsha.png"
+      "image": "images/news/hindi/tv9bharatvarsha.webp"
     },
     {
       "id": 16,
       "name": "News Nation",
       "url": "https://www.newsnationtv.com/",
-      "image": "images/news/hindi/newsnation.png"
+      "image": "images/news/hindi/newsnation.webp"
     },
     {
       "id": 17,
       "name": "NDTV",
       "url": "https://ndtv.in/?pfrom=home-ndtv_header-globalnav",
-      "image": "images/news/hindi/ndtv.jpg"
+      "image": "images/news/hindi/ndtv.webp"
     },
     {
       "id": 18,
@@ -114,55 +114,492 @@
       "id": 1,
       "name": "Inshort",
       "url": "https://www.inshorts.com/en/read",
-      "image": "images/news/hindi/inshort.png"
+      "image": "images/news/hindi/inshort.webp"
     },
     {
       "id": 2,
       "name": "The Hindu",
       "url": "https://www.thehindu.com/",
-      "image": "images/news/english/thehindu.png"
+      "image": "images/news/english/thehindu.webp"
     },
     {
       "id": 3,
       "name": "The Indian Express",
       "url": "https://indianexpress.com/",
-      "image": "images/news/english/theindianexpress.png"
+      "image": "images/news/english/theindianexpress.webp"
     },
     {
       "id": 4,
       "name": "Hindustan Times",
       "url": "https://www.hindustantimes.com/latest-news",
-      "image": "images/news/english/hindustantimes.png"
+      "image": "images/news/english/hindustantimes.webp"
     },
     {
       "id": 5,
       "name": "The Statesman",
       "url": "https://www.thestatesman.com/",
-      "image": "images/news/english/statesman.png"
+      "image": "images/news/english/statesman.webp"
     },
     {
       "id": 6,
       "name": "The Economic Times",
       "url": "https://economictimes.indiatimes.com/",
-      "image": "images/news/english/economictimes.png"
+      "image": "images/news/english/economictimes.webp"
     },
     {
       "id": 7,
       "name": "BBC",
       "url": "https://www.bbc.com/news",
-      "image": "images/news/english/bbc.png"
+      "image": "images/news/english/bbc.webp"
     },
     {
       "id": 8,
       "name": "CNBC",
       "url": "https://www.cnbc.com/world/?region=world",
-      "image": "images/news/english/cnbc.jpg"
+      "image": "images/news/english/cnbc.webp"
     },
     {
       "id": 9,
       "name": "CNN",
       "url": "https://edition.cnn.com/",
-      "image": "images/news/english/cnn.jpg"
+      "image": "images/news/english/cnn.webp"
+    },
+    {
+      "id": 10,
+      "name": "Times Of India",
+      "url": "https://timesofindia.indiatimes.com/",
+      "image": "images/news/english/toi.webp"
+    },
+    {
+      "id": 11,
+      "name": "Bangalore Mirror",
+      "url": "https://bangaloremirror.indiatimes.com/",
+      "image": "images/news/english/bangaloremirror.webp"
+    },
+    {
+      "id": 12,
+      "name": "Business Standard",
+      "url": "https://www.business-standard.com/",
+      "image": "images/news/english/businessstandard.webp"
+    },
+    {
+      "id": 13,
+      "name": "Mumbai Mirror",
+      "url": "https://mumbaimirror.indiatimes.com/",
+      "image": "images/news/english/mumbaimirror.webp"
+    }
+  ],
+  "বাংলা": [
+    {
+      "id": 1,
+      "name": "Anandabazar Patrika",
+      "url": "https://www.anandabazar.com/",
+      "image": "images/news/bangali/anandabazarpatrika.webp"
+    },
+    {
+      "id": 2,
+      "name": "Aajkaal",
+      "url": "https://www.aajkaal.in/",
+      "image": "images/news/bangali/aajkaal.webp"
+    },
+    {
+      "id": 3,
+      "name": "Bartaman",
+      "url": "https://bartamanpatrika.com/home",
+      "image": "images/news/bangali/bartaman.webp"
+    },
+    {
+      "id": 4,
+      "name": "Sangbad Protidin",
+      "url": "https://www.sangbadpratidin.in/",
+      "image": "images/news/bangali/sangbadprotidin.webp"
+    },
+    {
+      "id": 5,
+      "name": "Bangla Hunt",
+      "url": "https://banglahunt.com/",
+      "image": "images/news/bangali/banglahunt.webp"
+    },
+    {
+      "id": 6,
+      "name": "Asomiya Pratidin",
+      "url": "https://www.asomiyapratidin.in/",
+      "image": "images/news/bangali/asomiyapratidin.webp"
+    },
+    {
+      "id": 7,
+      "name": "ABP Ananda",
+      "url": "https://bengali.abplive.com/",
+      "image": "images/news/bangali/abpananda.webp"
+    },
+    {
+      "id": 8,
+      "name": "News Time Bangla",
+      "url": "https://bengali.news18.com/live-tv/",
+      "image": "images/news/bangali/newstimebangla.webp"
+    },
+    {
+      "id": 9,
+      "name": "Kolkata TV",
+      "url": "https://kolkatatv.org/",
+      "image": "images/news/bangali/kolkatatv.webp"
+    },
+    {
+      "id": 10,
+      "name": "24 Ghanta",
+      "url": "https://zeenews.india.com/bengali",
+      "image": "images/news/bangali/24ghanta.webp"
+    }
+  ],
+  "ગુજરાતિ": [
+    {
+      "id": 1,
+      "name":"Gujarat Samachar",
+      "url": "https://www.gujaratsamachar.com/",
+      "image": "images/news/gujrati/gujaratsamachar.webp"
+    },
+    {
+      "id": 2,
+      "name": "Divya Bhaskar",
+      "url": "https://www.divyabhaskar.co.in/",
+      "image": "images/news/gujrati/divyabhaskar.webp"
+    },
+    {
+      "id": 3,
+      "name": "Mumbai Samachar",
+      "url": "https://www.bombaysamachar.com/",
+      "image": "images/news/gujrati/mumbaisamachar.webp"
+    },
+    {
+      "id": 4,
+      "name": "Gujarat Mitra",
+      "url":"https://gujaratmitra.in/",
+      "image": "images/news/gujrati/gujaratmitra.webp"
+    },
+    {
+      "id": 5,
+      "name": "NavGujarat Samay",
+      "url": "https://navgujaratsamay.com/",
+      "image": "images/news/gujrati/navgujaratsamay.webp"
+    },
+    {
+      "id": 6,
+      "name": "TV9 Gujarati",
+      "url": "https://tv9gujarati.com/",
+      "image": "images/news/gujrati/tv9gujarati.webp"
+    },
+    {
+      "id": 7,
+      "name": "News 18 Gujrati",
+      "url": "https://gujarati.news18.com/live-tv/",
+      "image": "images/news/gujrati/news18gujrati.webp"
+    },
+    {
+      "id": 8,
+      "name": "ABP News Gujrati",
+      "url": "https://gujarati.abplive.com/",
+      "image": "images/news/gujrati/abpnewsgujrati.webp"
+    },
+    {
+      "id":9,
+      "name": "Sandesh News",
+      "url": "https://sandesh.com/",
+      "image": "images/news/gujrati/sandeshnews.webp"
+    },
+    {
+      "id": 10,
+      "name": "GSTV",
+      "url": "https://www.gstv.in/",
+      "image": "images/news/gujrati/gstv.webp"
+    }
+  ],
+  "ಕನ್ನಡ": [
+    {
+      "id": 1,
+      "name": "News 18 Kannada",
+      "url": "https://kannada.news18.com/",
+      "image": "images/news/kannada/News18Kannada.webp"
+    },
+    {
+      "id": 2,
+      "name": "TV9 Kannada",
+      "url": "https://tv9kannada.com/",
+      "image": "images/news/kannada/TV9Kannada.webp"
+    },
+    {
+      "id": 3,
+      "name": "Asianet Suvarna News",
+      "url": "https://kannada.asianetnews.com/",
+      "image": "images/news/kannada/AsianetSuvarnaNews.webp"
+    },
+    {
+      "id": 4,
+      "name": "Vijaya Karnataka",
+      "url": "https://vijaykarnataka.com/",
+      "image": "images/news/kannada/VijayaKarnataka.webp"
+    },
+    {
+      "id": 5,
+      "name": "Kannada Prabha",
+      "url": "https://www.kannadaprabha.com/",
+      "image": "images/news/kannada/KannadaPrabha.webp"
+    },
+    {
+      "id": 6,
+      "name": "Udayavani",
+      "url": "https://www.udayavani.com/",
+      "image": "images/news/kannada/Udayavani.webp"
+    },
+    {
+      "id": 7,
+      "name": "Prajavani",
+      "url": "https://www.prajavani.net/",
+      "image": "images/news/kannada/Prajavani.webp"
+    },
+    {
+      "id": 8,
+      "name": "Vartha Bharati",
+      "url": "https://www.varthabharati.in/",
+      "image": "images/news/kannada/VarthaBharati.webp"
+    },
+    {
+      "id": 9,
+      "name": "Vishwavani NEWS",
+      "url": "http://vishwavani.news/",
+      "image": "images/news/kannada/VishwavaniNEWS.webp"
+    },
+    {
+      "id": 10,
+      "name": "Praja Pragathi",
+      "url": "https://prajapragathi.com/",
+      "image": "images/news/kannada/PrajaPragathi.webp"
+    }
+  ],
+  "ਪੰਜਾਬੀ": [
+    {
+      "id": 1,
+      "name": "Ajit - Punjab Di Awaaz",
+      "url": "http://beta.ajitjalandhar.com/",
+      "image": "images/news/punjabi/AjitPunjabDiAwaaz.webp"
+    },
+    {
+      "id": 2,
+      "name": "Punjab Kesari",
+      "url": "https://www.punjabkesari.in/",
+      "image": "images/news/punjabi/PunjabKesari.webp"
+    },
+    {
+      "id": 3,
+      "name": "Jagbani",
+      "url": "https://jagbani.punjabkesari.in/",
+      "image": "images/news/punjabi/Jagbani.webp"
+    },
+    {
+      "id": 4,
+      "name": "Punjabi Tribune",
+      "url": "https://www.punjabitribuneonline.com/",
+      "image": "images/news/punjabi/PunjabiTribune.webp"
+    },{
+      "id": 5,
+      "name": "Punjabi Jagran",
+      "url": "https://www.punjabijagran.com/",
+      "image": "images/news/punjabi/PunjabiJagran.webp"
+    },{
+      "id": 6,
+      "name": "ABP Sanjha",
+      "url": "https://punjabi.abplive.com/",
+      "image": "images/news/punjabi/ABPSanjha.webp"
+    },
+    {
+      "id": 7,
+      "name": "PTC News",
+      "url": "https://www.ptcnews.tv/",
+      "image": "images/news/punjabi/PTCNews.webp"
+    }
+  ],
+  "मराठी": [
+    {
+      "id": 1,
+      "name": "Lokmat",
+      "url": "https://www.lokmat.com/",
+      "image": "images/news/marathi/Lokmat.webp"
+    },
+    {
+      "id": 2,
+      "name": "Loksatta",
+      "url": "https://www.loksatta.com/",
+      "image": "images/news/marathi/Loksatta.webp"
+    },{
+      "id": 3,
+      "name": "Maharashtra Times",
+      "url": "https://maharashtratimes.com/",
+      "image": "images/news/marathi/MaharashtraTimes.webp"
+    },{
+      "id": 4,
+      "name": "Sakal",
+      "url": "https://www.esakal.com/",
+      "image": "images/news/marathi/Sakal.webp"
+    },{
+      "id": 5,
+      "name": "Divya Marathi",
+      "url": "https://divyamarathi.bhaskar.com/",
+      "image": "images/news/marathi/DivyaMarathi.webp"
+    },{
+      "id": 6,
+      "name": "ABP Majha",
+      "url": "https://marathi.abplive.com/",
+      "image": "images/news/marathi/ABPMajha.webp"
+    },{
+      "id": 7,
+      "name": "TV9 Marathi",
+      "url": "https://www.tv9marathi.com/",
+      "image": "images/news/marathi/TV9Marathi.webp"
+    }
+  ],
+  "తెలుగు": [
+    {
+      "id": 1,
+      "name": "Ennadu",
+      "url": "https://www.eenadu.net/",
+      "image": "images/news/telugu/Ennadu.webp"
+    },{
+      "id": 2,
+      "name": "Sakshi",
+      "url": "https://www.sakshi.com/",
+      "image": "images/news/telugu/Sakshi.webp"
+    },{
+      "id": 3,
+      "name": "Andhra Jyothi",
+      "url": "https://www.andhrajyothy.com/",
+      "image": "images/news/telugu/AndhraJyothi.webp"
+    },{
+      "id": 4,
+      "name": "Andhra Bhoomi",
+      "url": "http://www.andhrabhoomi.net/",
+      "image": "images/news/telugu/AndhraBhoomi.webp"
+    },{
+      "id": 5,
+      "name": "Vartha",
+      "url": "https://www.vaartha.com/",
+      "image": "images/news/telugu/Vartha.webp"
+    },{
+      "id": 6,
+      "name": "TV9 Telugu",
+      "url": "https://tv9telugu.com/",
+      "image": "images/news/telugu/TV9Telugu.webp"
+    },{
+      "id": 7,
+      "name": "NTV Telugu",
+      "url": "https://ntvtelugu.com/",
+      "image": "images/news/telugu/NTVTelugu.webp"
+    },{
+      "id": 8,
+      "name": "TV5 News",
+      "url": "http://www.tv5news.in/",
+      "image": "images/news/telugu/TV5News.webp"
+    },{
+      "id": 9,
+      "name": "Sakshi TV",
+      "url": "https://www.sakshi.com/",
+      "image": "images/news/telugu/SakshiTV.webp"
+    }
+  ],
+  "தமிழ்": [
+    {
+      "id": 1,
+      "name": "Polimer News",
+      "url": "https://www.polimernews.com/dlive-tv",
+      "image": "images/news/tamil/PolimerNews.webp"
+    },{
+      "id": 2,
+      "name": "Sun News",
+      "url": "http://www.sunnewslive.in/",
+      "image": "images/news/tamil/SunNews.webp"
+    },{
+      "id": 3,
+      "name": "Puthiya Thalaimurai",
+      "url": "https://www.puthiyathalaimurai.com/",
+      "image": "images/news/tamil/PuthiyaThalaimurai.webp"
+    },{
+      "id": 4,
+      "name": "Thanti TV",
+      "url": "https://www.thanthitv.com/",
+      "image": "images/news/tamil/ThantiTV.webp"
+    },{
+      "id": 5,
+      "name": "News 18 Tamil",
+      "url": "https://tamil.news18.com/",
+      "image": "images/news/tamil/News18Tamil.webp"
+    },{
+      "id": 6,
+      "name": "Daily Thanthi",
+      "url": "https://www.dailythanthi.com/",
+      "image": "images/news/tamil/DailyThanthi.webp"
+    },{
+      "id": 7,
+      "name": "Dinamani",
+      "url": "https://epaper.dinamani.com/",
+      "image": "images/news/tamil/Dinamani.webp"
+    },{
+      "id": 8,
+      "name": "Dinakaran",
+      "url": "https://www.dinakaran.com/",
+      "image": "images/news/tamil/Dinakaran.webp"
+    },{
+      "id": 9,
+      "name": "The Hindu Tamil",
+      "url": "https://www.hindutamil.in/",
+      "image": "images/news/tamil/TheHinduTamil.webp"
+    }
+  ],
+  "മലയലം": [
+    {
+      "id": 1,
+      "name": "Malayala Manorama",
+      "url": "https://www.manoramaonline.com/home.html",
+      "image": "images/news/malyalam/MalayalaManorama.png"
+    },
+    {
+      "id": 2,
+      "name": "Mathrubhumi",
+      "url": "https://www.mathrubhumi.com/",
+      "image": "images/news/malyalam/Mathrubhumi.webp"
+    },
+    {
+      "id": 3,
+      "name": "Deshabhimani",
+      "url": "https://www.deshabhimani.com/",
+      "image": "images/news/malyalam/Deshabhimani.webp"
+    },{
+      "id": 4,
+      "name": "Madhyamam",
+      "url": "https://www.madhyamam.com/",
+      "image": "images/news/malyalam/Madhyamam.webp"
+    },{
+      "id": 5,
+      "name": "Mangalam",
+      "url": "https://www.mangalam.com/",
+      "image": "images/news/malyalam/Mangalam.webp"
+    },{
+      "id": 6,
+      "name": "Kerala Kaumudi",
+      "url": "https://keralakaumudi.com/news/",
+      "image": "images/news/malyalam/KeralaKaumudi.webp"
+    },{
+      "id": 7,
+      "name": "News 18 Malyalam",
+      "url": "https://malayalam.news18.com/",
+      "image": "images/news/malyalam/News18Malyalam.webp"
+    },{
+      "id": 8,
+      "name": "Asianet News",
+      "url": "https://www.asianetnews.com/",
+      "image": "images/news/malyalam/AsianetNews.webp"
+    },{
+      "id": 9,
+      "name": "Janam TV",
+      "url": "https://janamtv.com/",
+      "image": "images/news/malyalam/JanamTV.webp"
     }
   ],
   "Tech": [
@@ -170,7 +607,7 @@
       "id": 1,
       "name": "TechCrunch",
       "url": "https://techcrunch.com/",
-      "image": "images/category/techcrunch.png"
+      "image": "images/category/techcrunch.webp"
     }
   ]
 }

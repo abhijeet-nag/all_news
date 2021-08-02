@@ -7,11 +7,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:multi_select_flutter/chip_field/multi_select_chip_field.dart';
 import 'package:multi_select_flutter/dialog/multi_select_dialog_field.dart';
 import 'package:multi_select_flutter/util/multi_select_item.dart';
 import 'package:multi_select_flutter/util/multi_select_list_type.dart';
+import 'package:share/share.dart';
 import 'modules/categories.dart';
 import 'modules/language.dart';
 
@@ -33,8 +35,7 @@ class HomePageState extends State<HomePage> {
     Languages(id: 7, lang: "मराठी"),
     Languages(id: 8, lang: "తెలుగు"),
     Languages(id: 9, lang: "தமிழ்"),
-    Languages(id: 10, lang: "ଓଡିଆ"),
-    Languages(id: 11, lang: "മലയലം"),
+    Languages(id: 10, lang: "മലയലം"),
   ];
 
   var loaded;
@@ -51,11 +52,6 @@ class HomePageState extends State<HomePage> {
     Categories(id: 7, category: "Sports"),
   ];
 
-  final List _items = _category
-      .map((category) =>
-          MultiSelectItem<Categories>(category!, category.category))
-      .toList();
-
   List selectedLanguage = [];
   List selectedCategory = [];
 
@@ -70,6 +66,8 @@ class HomePageState extends State<HomePage> {
   }
 
   var json, decodeData, data;
+
+  InAppWebViewController? _webViewController;
 
   changedData(List<String> lang) async {
     print("1st");
@@ -110,55 +108,67 @@ class HomePageState extends State<HomePage> {
         actions: [
           IconButton(
             icon: Icon(Icons.share),
-            onPressed: () {},
+            onPressed: () {
+              Share.share(
+                  "All in 1 news App Here You Found all language and all categories of News https://play.google.com/store/apps/details?id=com.allnews.clients.all_news");
+            },
           ),
-          FittedBox(
-            child: MultiSelectDialogField(
-              height: MediaQuery.of(context).size.height / 2,
-              buttonIcon: Icon(Icons.arrow_drop_down),
-              buttonText: Text("Languages"),
-              title: Text("Select Language"),
-              backgroundColor: Colors.white,
-              decoration: BoxDecoration(
-                shape: BoxShape.rectangle,
-              ),
-              items: _language.map((e) => MultiSelectItem(e, e!.lang)).toList(),
-              listType: MultiSelectListType.LIST,
-              onConfirm: (List<Languages?> v) async {
-                setState(() {
-                  lan = [];
-                  selectedLanguage = v;
-                });
-                selectedLanguage.forEach((element) {
-                  lan.add(element.lang);
-                });
-                if (lan.length == 0 || lan.isEmpty) {
-                  DataModel.data.clear();
-                  await Future.delayed(Duration(seconds: 1));
-                  data = decodeData["हिंदी"];
-                  setState(() {
-                    DataModel.data = List.from(data)
-                        .map<NewsData>((newsData) => NewsData.fromMap(newsData))
-                        .toList();
-                  });
-                } else {
-                  DataModel.data.clear();
-                  await Future.delayed(Duration(seconds: 1));
-                  data = [];
-                  List<NewsData> list;
-                  lan.forEach((element) {
-                    print(element);
-                    data = decodeData[element];
-                    list = List.from(data)
-                        .map<NewsData>((newsData) => NewsData.fromMap(newsData))
-                        .toList();
+          Flexible(
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: FittedBox(
+                child: MultiSelectDialogField(
+                  height: MediaQuery.of(context).size.height / 2,
+                  buttonIcon: Icon(Icons.arrow_drop_down),
+                  buttonText: Text("Languages"),
+                  title: Text("Select Language"),
+                  backgroundColor: Colors.white,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.rectangle,
+                  ),
+                  items: _language
+                      .map((e) => MultiSelectItem(e, e!.lang))
+                      .toList(),
+                  listType: MultiSelectListType.LIST,
+                  onConfirm: (List<Languages?> v) async {
                     setState(() {
-                      DataModel.data.addAll(list);
+                      lan = [];
+                      selectedLanguage = v;
                     });
-                    print(element);
-                  });
-                }
-              },
+                    selectedLanguage.forEach((element) {
+                      lan.add(element.lang);
+                    });
+                    if (lan.length == 0 || lan.isEmpty) {
+                      DataModel.data.clear();
+                      await Future.delayed(Duration(seconds: 1));
+                      data = decodeData["हिंदी"];
+                      setState(() {
+                        DataModel.data = List.from(data)
+                            .map<NewsData>(
+                                (newsData) => NewsData.fromMap(newsData))
+                            .toList();
+                      });
+                    } else {
+                      DataModel.data.clear();
+                      await Future.delayed(Duration(seconds: 1));
+                      data = [];
+                      List<NewsData> list;
+                      lan.forEach((element) {
+                        print(element);
+                        data = decodeData[element];
+                        list = List.from(data)
+                            .map<NewsData>(
+                                (newsData) => NewsData.fromMap(newsData))
+                            .toList();
+                        setState(() {
+                          DataModel.data.addAll(list);
+                        });
+                        print(element);
+                      });
+                    }
+                  },
+                ),
+              ),
             ),
           ),
         ],
@@ -169,128 +179,34 @@ class HomePageState extends State<HomePage> {
         ),
       ),
       body: Center(
-        child: Stack(
-          fit: StackFit.passthrough,
+        child: Column(
+          // fit: StackFit.passthrough,
           children: [
-            Container(
-              child: Row(
-                children: [
-                  Column(
-                    children: [
-                      FittedBox(
-                        child: loaded
-                            ? Stack(
-                                children: [
-                                  MultiSelectChipField(
-                                    items: _category
-                                        .map((e) =>
-                                            MultiSelectItem(e, e!.category))
-                                        .toList(),
-                                    onTap: (values) async {
-                                      setState(() {
-                                        lan = [];
-                                        selectedCategory = values;
-                                      });
-                                      selectedCategory.forEach((element) {
-                                        lan.add(element.category);
-                                      });
-
-                                      DataModel.data.clear();
-                                      await Future.delayed(
-                                          Duration(seconds: 1));
-                                      data = [];
-                                      List<NewsData> list;
-                                      lan.forEach((element) {
-                                        print(element);
-                                        data = decodeData[element];
-                                        list = List.from(data)
-                                            .map<NewsData>((newsData) =>
-                                                NewsData.fromMap(newsData))
-                                            .toList();
+            Expanded(
+              flex: 9,
+              child: Container(
+                child: Row(
+                  children: [
+                    Column(
+                      children: [
+                        FittedBox(
+                          child: loaded
+                              ? Stack(
+                                  children: [
+                                    MultiSelectChipField(
+                                      items: _category
+                                          .map((e) =>
+                                              MultiSelectItem(e, e!.category))
+                                          .toList(),
+                                      onTap: (values) async {
                                         setState(() {
-                                          DataModel.data.addAll(list);
+                                          lan = [];
+                                          selectedCategory = values;
                                         });
-                                        print(element);
-                                      });
-                                    },
-                                    scroll: true,
-                                    height: 50,
-                                    showHeader: false,
-                                    selectedChipColor:
-                                        Color.fromRGBO(249, 170, 51, 1),
-                                    decoration:
-                                        BoxDecoration(color: Colors.white70),
-                                    selectedTextStyle:
-                                        TextStyle(color: Colors.white),
-                                  ),
-                                  GestureDetector(
-                                    onTap: () {
-                                      Get.defaultDialog(
-                                          title: "Unlock All Features",
-                                          middleText:
-                                              "Watch Reward Video to Unlock all Features.",
-                                          onCancel: () {},
-                                          onConfirm: () {
-                                            admobServices.showRewardedAd();
-                                            setState(() {
-                                              loaded = false;
-                                            });
-                                            Get.back();
-                                          });
-                                    },
-                                    child: Container(
-                                      color: Colors.black.withOpacity(0.4),
-                                      width: MediaQuery.of(context).size.width,
-                                      height: 50,
-                                      child: Center(
-                                        child: Icon(
-                                          Icons.lock,
-                                          color: Colors.white,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              )
-                            : Container(
-                                width: MediaQuery.of(context).size.width,
-                                child: MultiSelectChipField(
-                                  items: _category
-                                      .map((e) =>
-                                          MultiSelectItem(e, e!.category))
-                                      .toList(),
-                                  onTap: (values) async {
-                                    if (loaded) {
-                                      Get.defaultDialog(
-                                          title: "Unlock All features",
-                                          middleText:
-                                              "Watch Reward ad to unlock all features!",
-                                          onCancel: () {},
-                                          onConfirm: () {
-                                            loaded = false;
-                                            setState(() {});
-                                          });
-                                    } else {
-                                      setState(() {
-                                        lan = [];
-                                        selectedCategory = values;
-                                      });
-                                      selectedCategory.forEach((element) {
-                                        lan.add(element.category);
-                                      });
+                                        selectedCategory.forEach((element) {
+                                          lan.add(element.category);
+                                        });
 
-                                      if (lan.length == 0 || lan.isEmpty) {
-                                        DataModel.data.clear();
-                                        await Future.delayed(
-                                            Duration(seconds: 1));
-                                        data = decodeData["हिंदी"];
-                                        setState(() {
-                                          DataModel.data = List.from(data)
-                                              .map<NewsData>((newsData) =>
-                                                  NewsData.fromMap(newsData))
-                                              .toList();
-                                        });
-                                      } else {
                                         DataModel.data.clear();
                                         await Future.delayed(
                                             Duration(seconds: 1));
@@ -308,101 +224,206 @@ class HomePageState extends State<HomePage> {
                                           });
                                           print(element);
                                         });
-                                      }
-                                    }
-                                  },
-                                  scroll: true,
-                                  height: 50,
-                                  showHeader: false,
-                                  selectedChipColor:
-                                      Color.fromRGBO(249, 170, 51, 1),
-                                  decoration:
-                                      BoxDecoration(color: Colors.white70),
-                                  selectedTextStyle:
-                                      TextStyle(color: Colors.white),
-                                ),
-                              ),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      (DataModel.data.isNotEmpty)
-                          ? Expanded(
-                              child: Container(
-                                height: double.maxFinite,
-                                width: MediaQuery.of(context).size.width,
-                                child: GridView.builder(
-                                    padding: EdgeInsets.all(15),
-                                    gridDelegate:
-                                        SliverGridDelegateWithMaxCrossAxisExtent(
-                                      maxCrossAxisExtent: 200,
-                                      // childAspectRatio: 3 / 2,
-                                      crossAxisSpacing: 30,
-                                      mainAxisSpacing: 40,
+                                      },
+                                      scroll: true,
+                                      height: 50,
+                                      showHeader: false,
+                                      selectedChipColor:
+                                          Color.fromRGBO(249, 170, 51, 1),
+                                      decoration:
+                                          BoxDecoration(color: Colors.white70),
+                                      selectedTextStyle:
+                                          TextStyle(color: Colors.white),
                                     ),
-                                    itemCount: DataModel.data.length,
-                                    itemBuilder: (BuildContext ctx, index) {
-                                      return Container(
-                                        alignment: Alignment.center,
-                                        child: GestureDetector(
-                                          child: Card(
-                                            elevation: 10,
-                                            margin: EdgeInsets.all(2),
-                                            child: Column(
-                                              children: [
-                                                Container(
-                                                  color: Color.fromRGBO(
-                                                      35, 47, 52, 1),
-                                                  padding: EdgeInsets.all(5),
-                                                  child: Image.asset(
-                                                    DataModel.data[index].image,
-                                                  ),
-                                                  width: MediaQuery.of(context)
-                                                          .size
-                                                          .width /
-                                                      2.5,
-                                                  height: 90,
-                                                ),
-                                                Container(
-                                                  color: Colors.white,
-                                                  width: MediaQuery.of(context)
-                                                          .size
-                                                          .width /
-                                                      3,
-                                                  child: Center(
-                                                      child: Text(DataModel
-                                                          .data[index].name)),
-                                                  height: 40,
-                                                ),
-                                              ],
-                                            ),
+                                    GestureDetector(
+                                      onTap: () {
+                                        Get.defaultDialog(
+                                            title: "Unlock All Features",
+                                            middleText:
+                                                "Watch Reward Video to Unlock all Features.",
+                                            onCancel: () {},
+                                            onConfirm: () {
+                                              admobServices.showRewardedAd();
+                                              setState(() {
+                                                loaded = false;
+                                              });
+                                              Get.back();
+                                            });
+                                      },
+                                      child: Container(
+                                        color: Colors.black.withOpacity(0.4),
+                                        width:
+                                            MediaQuery.of(context).size.width,
+                                        height: 50,
+                                        child: Center(
+                                          child: Icon(
+                                            Icons.lock,
+                                            color: Colors.white,
                                           ),
-                                          onTap: () {
-                                            // _launchURLApp(DataModel.data[index].url);
-                                            Get.to(() => Web(),
-                                                arguments:
-                                                    DataModel.data[index].url);
-                                          },
                                         ),
-                                      );
-                                    }),
+                                      ),
+                                    ),
+                                  ],
+                                )
+                              : Container(
+                                  width: MediaQuery.of(context).size.width,
+                                  child: MultiSelectChipField(
+                                    items: _category
+                                        .map((e) =>
+                                            MultiSelectItem(e, e!.category))
+                                        .toList(),
+                                    onTap: (values) async {
+                                      if (loaded) {
+                                        Get.defaultDialog(
+                                            title: "Unlock All features",
+                                            middleText:
+                                                "Watch Reward ad to unlock all features!",
+                                            onCancel: () {},
+                                            onConfirm: () {
+                                              loaded = false;
+                                              setState(() {});
+                                            });
+                                      } else {
+                                        setState(() {
+                                          lan = [];
+                                          selectedCategory = values;
+                                        });
+                                        selectedCategory.forEach((element) {
+                                          lan.add(element.category);
+                                        });
+
+                                        if (lan.length == 0 || lan.isEmpty) {
+                                          DataModel.data.clear();
+                                          await Future.delayed(
+                                              Duration(seconds: 1));
+                                          data = decodeData["हिंदी"];
+                                          setState(() {
+                                            DataModel.data = List.from(data)
+                                                .map<NewsData>((newsData) =>
+                                                    NewsData.fromMap(newsData))
+                                                .toList();
+                                          });
+                                        } else {
+                                          DataModel.data.clear();
+                                          await Future.delayed(
+                                              Duration(seconds: 1));
+                                          data = [];
+                                          List<NewsData> list;
+                                          lan.forEach((element) {
+                                            print(element);
+                                            data = decodeData[element];
+                                            list = List.from(data)
+                                                .map<NewsData>((newsData) =>
+                                                    NewsData.fromMap(newsData))
+                                                .toList();
+                                            setState(() {
+                                              DataModel.data.addAll(list);
+                                            });
+                                            print(element);
+                                          });
+                                        }
+                                      }
+                                    },
+                                    scroll: true,
+                                    height: 50,
+                                    showHeader: false,
+                                    selectedChipColor:
+                                        Color.fromRGBO(249, 170, 51, 1),
+                                    decoration:
+                                        BoxDecoration(color: Colors.white70),
+                                    selectedTextStyle:
+                                        TextStyle(color: Colors.white),
+                                  ),
+                                ),
+                        ),
+                        SizedBox(
+                          height: 5,
+                        ),
+                        (DataModel.data.isNotEmpty)
+                            ? Expanded(
+                                child: Container(
+                                  height: double.maxFinite,
+                                  width: MediaQuery.of(context).size.width,
+                                  child: GridView.builder(
+                                      padding: EdgeInsets.all(15),
+                                      gridDelegate:
+                                          SliverGridDelegateWithMaxCrossAxisExtent(
+                                        maxCrossAxisExtent: 200,
+                                        // childAspectRatio: 3 / 2,
+                                        crossAxisSpacing: 30,
+                                        mainAxisSpacing: 40,
+                                      ),
+                                      itemCount: DataModel.data.length,
+                                      itemBuilder: (BuildContext ctx, index) {
+                                        return Container(
+                                          alignment: Alignment.center,
+                                          child: GestureDetector(
+                                            child: Card(
+                                              elevation: 10,
+                                              margin: EdgeInsets.all(2),
+                                              child: Column(
+                                                children: [
+                                                  Container(
+                                                    color: Color.fromRGBO(
+                                                        35, 47, 52, 1),
+                                                    padding: EdgeInsets.all(5),
+                                                    child: Image.asset(
+                                                      DataModel
+                                                          .data[index].image,
+                                                    ),
+                                                    width:
+                                                        MediaQuery.of(context)
+                                                                .size
+                                                                .width /
+                                                            2.5,
+                                                    height: 90,
+                                                  ),
+                                                  Container(
+                                                    color: Colors.white,
+                                                    width:
+                                                        MediaQuery.of(context)
+                                                                .size
+                                                                .width /
+                                                            3,
+                                                    child: Center(
+                                                        child: Text(DataModel
+                                                            .data[index].name)),
+                                                    height: 40,
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                            onTap: () {
+                                              // Get.to(() => Web(),
+                                              //     arguments: DataModel
+                                              //         .data[index].url);
+
+                                              InAppWebView(
+                                                initialFile:
+                                                    DataModel.data[index].url,
+                                              );
+                                            },
+                                          ),
+                                        );
+                                      }),
+                                ),
+                              )
+                            : Center(
+                                child: CircularProgressIndicator(),
                               ),
-                            )
-                          : Center(
-                              child: CircularProgressIndicator(),
-                            ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                    ],
-                  )
-                ],
+                        SizedBox(
+                          height: 5,
+                        ),
+                      ],
+                    )
+                  ],
+                ),
               ),
             ),
-            Align(
-              alignment: Alignment.bottomCenter,
-              child: SizedBox(
+            FittedBox(
+              child: Container(
                 height: 70,
+                width: MediaQuery.of(context).size.width,
                 child: AdWidget(
                   key: UniqueKey(),
                   ad: AdmobServices.createBannerAd()..load(),
