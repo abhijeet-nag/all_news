@@ -47,11 +47,25 @@ dev_dependencies:
     sdk: flutter
 
   flutter_launcher_icons: "^0.9.1"
+  flutter_native_splash: ^1.2.1
 
 flutter_icons:
   android: "launcher_icon"
   ios: true
   image_path: "images/icon.png"
+
+flutter_native_splash:
+
+  android: true
+  ios: true
+  web: true
+
+  color: "#EFE4B0"
+  image: "images/icon.png"
+
+  android_gravity: center
+  ios_content_mode: center
+  web_image_mode: center
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

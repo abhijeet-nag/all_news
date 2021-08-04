@@ -11,7 +11,7 @@
 //   _CategoryState createState() => _CategoryState();
 // }
 //
-// class _CategoryState extends State<Category> {
+// class _CatgoryState extends State<Category> {
 //   static List<Categories?> _category = [
 //     Categories(id: 1, category: "Tech"),
 //     Categories(id: 2, category: "Business & Finance"),

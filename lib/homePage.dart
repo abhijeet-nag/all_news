@@ -7,7 +7,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:multi_select_flutter/chip_field/multi_select_chip_field.dart';
 import 'package:multi_select_flutter/dialog/multi_select_dialog_field.dart';
@@ -38,6 +37,8 @@ class HomePageState extends State<HomePage> {
     Languages(id: 10, lang: "മലയലം"),
   ];
 
+  var counter;
+
   var loaded;
 
   AdmobServices admobServices = new AdmobServices();
@@ -61,13 +62,14 @@ class HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     loaded = true;
+    counter = 0;
     admobServices.loadRewardedAd();
     loadData();
   }
 
   var json, decodeData, data;
 
-  InAppWebViewController? _webViewController;
+  // InAppWebViewController? _webViewController;
 
   changedData(List<String> lang) async {
     print("1st");
@@ -394,14 +396,19 @@ class HomePageState extends State<HomePage> {
                                               ),
                                             ),
                                             onTap: () {
-                                              // Get.to(() => Web(),
-                                              //     arguments: DataModel
-                                              //         .data[index].url);
+                                              counter++;
 
-                                              InAppWebView(
-                                                initialFile:
-                                                    DataModel.data[index].url,
-                                              );
+                                              if (counter % 5 == 0) {
+                                                counter = 0;
+                                                admobServices.showInterad();
+                                              }
+                                              Get.to(() => Web(),
+                                                  arguments: DataModel
+                                                      .data[index].url);
+                                              setState(() {});
+                                              if (counter == 3) {
+                                                admobServices.createInterad();
+                                              }
                                             },
                                           ),
                                         );
@@ -433,11 +440,6 @@ class HomePageState extends State<HomePage> {
           ],
         ),
       ),
-      // bottomNavigationBar: Container(
-      //   height: 100,
-      //   child: AdWidget(
-      //       key: UniqueKey(), ad: AdmobServices.createBannerAd()..load()),
-      // ),
     );
   }
 }

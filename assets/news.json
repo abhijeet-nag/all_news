@@ -608,6 +608,376 @@
       "name": "TechCrunch",
       "url": "https://techcrunch.com/",
       "image": "images/category/techcrunch.webp"
+    },{
+      "id": 2,
+      "name": "Cnet",
+      "url": "https://www.cnet.com/",
+      "image": "images/category/Cnet.webp"
+    },{
+      "id": 3,
+      "name": "9to5mac",
+      "url": "https://9to5mac.com/",
+      "image": "images/category/9to5mac.webp"
+    },{
+      "id": 4,
+      "name": "Engadget",
+      "url": "https://www.engadget.com/",
+      "image": "images/category/Engadget.webp"
+    },{
+      "id": 5,
+      "name": "Wired",
+      "url": "https://www.wired.com/",
+      "image": "images/category/Wired.webp"
+    },{
+      "id": 6,
+      "name": "TechRadar",
+      "url": "https://www.techradar.com/in",
+      "image": "images/category/TechRadar.webp"
+    },{
+      "id": 7,
+      "name": "Axios",
+      "url": "https://www.axios.com/",
+      "image": "images/category/Axios.webp"
+    },{
+      "id": 8,
+      "name": "The New York Times",
+      "url": "https://www.nytimes.com/",
+      "image": "images/category/TheNewYorkTimes.jpg"
+    },{
+      "id": 9,
+      "name": "The Verge",
+      "url": "https://www.theverge.com/",
+      "image": "images/category/TheVerge.webp"
+    }
+  ],
+  "Business & Finance": [
+    {
+      "id": 1,
+      "name": "The Economic Times",
+      "url": "https://economictimes.indiatimes.com/",
+      "image": "images/category/TheEconomicTimes.webp"
+    },
+    {
+      "id": 2,
+      "name": "The Times Of India",
+      "url": "https://timesofindia.indiatimes.com/business",
+      "image": "images/news/english/toi.webp"
+    },
+    {
+      "id": 3,
+      "name": "Business Standard",
+      "url": "https://www.business-standard.com/",
+      "image": "images/news/english/businessstandard.webp"
+    },
+    {
+      "id": 4,
+      "name": "NDTV Profit",
+      "url": "https://www.ndtv.com/business/latest",
+      "image": "images/category/NDTVProfit.webp"
+    },    {
+      "id": 5,
+      "name": "India Today",
+      "url": "https://www.indiatoday.in/business",
+      "image": "images/category/IndiaToday.webp"
+    },
+    {
+      "id": 6,
+      "name": "Live Mint",
+      "url": "https://www.livemint.com/",
+      "image": "images/category/LiveMint.webp"
+    },
+    {
+      "id": 7,
+      "name": "Financial Express",
+      "url": "https://www.financialexpress.com/",
+      "image": "images/category/FinancialExpress.webp"
+    },    {
+      "id": 8,
+      "name": "Business Today",
+      "url": "https://www.businesstoday.in/",
+      "image": "images/category/BusinessToday.webp"
+    },
+    {
+      "id": 9,
+      "name": "CNBC",
+      "url": "https://www.cnbc.com/finance/",
+      "image": "images/news/english/cnbc.webp"
+    },
+    {
+      "id": 10,
+      "name": "Forbes",
+      "url": "https://www.forbes.com/",
+      "image": "images/category/Forbes.webp"
+    },{
+      "id": 11,
+      "name": "CNN Business",
+      "url": "https://edition.cnn.com/business",
+      "image": "images/category/CNNBusiness.webp"
+    },{
+      "id": 12,
+      "name": "Bloomberg",
+      "url": "https://www.bloomberg.com/asia",
+      "image": "images/category/Bloomberg.webp"
+    },
+    {
+      "id": 13,
+      "name": "Yahoo Finance",
+      "url": "https://in.finance.yahoo.com/",
+      "image": "images/category/YahooFinance.webp"
+    }
+  ],
+  "Stocks": [
+    {
+      "id": 1,
+      "name": "Moneycontrol",
+      "url": "https://www.moneycontrol.com/",
+      "image": "images/category/Moneycontrol.webp"
+    },
+    {
+      "id": 2,
+      "name": "The Economic Times",
+      "url": "https://economictimes.indiatimes.com/",
+      "image": "images/news/english/economictimes.webp"
+    },
+    {
+      "id": 3,
+      "name": "Business Standard",
+      "url": "https://www.business-standard.com/",
+      "image": "images/news/english/businessstandard.webp"
+    },
+    {
+      "id": 4,
+      "name": "Bloomberg Quint",
+      "url": "https://www.bloombergquint.com/",
+      "image": "images/category/BloombergQuint.webp"
+    },
+    {
+      "id": 5,
+      "name": "NSE India",
+      "url": "https://www.nseindia.com/",
+      "image": "images/category/NSEIndia.webp"
+    },
+    {
+      "id": 6,
+      "name": "Live Mint",
+      "url": "https://www.livemint.com/",
+      "image": "images/category/LiveMint.webp"
+    },
+    {
+      "id": 7,
+      "name": "Investing",
+      "url": "https://www.investing.com/",
+      "image": "images/category/Investing.webp"
+    },
+    {
+      "id": 8,
+      "name": "Yahoo Finance",
+      "url": "https://in.finance.yahoo.com/",
+      "image": "images/category/YahooFinance.webp"
+    },{
+      "id": 9,
+      "name": "BSE India",
+      "url": "https://www.bseindia.com/",
+      "image": "images/category/BSEIndia.webp"
+    },{
+      "id": 10,
+      "name": "Value Research",
+      "url": "https://www.valueresearchonline.com/",
+      "image": "images/category/ValueResearch.webp"
+    }
+  ],
+  "Current Affairs": [
+    {
+      "id": 1,
+      "name": "Jagran Josh",
+      "url": "https://www.jagranjosh.com/current-affairs",
+      "image": "images/category/JagranJosh.webp"
+    },
+    {
+      "id": 2,
+      "name": "GKToday",
+      "url": "https://www.gktoday.in/current-affairs/",
+      "image": "images/category/GKToday.webp"
+    },
+    {
+      "id": 3,
+      "name": "Business Standard Current Affairs",
+      "url": "https://www.business-standard.com/current-affairs",
+      "image": "images/news/english/businessstandard.webp"
+    },
+    {
+      "id": 4,
+      "name": "Freshers Live Current Affairs",
+      "url": "https://www.fresherslive.com/current-affairs/index",
+      "image": "images/category/FreshersLive.webp"
+    },
+    {
+      "id": 5,
+      "name": "Moneycontrol Current Affairs",
+      "url": "https://www.moneycontrol.com/news/tags/current-affairs.html",
+      "image": "images/category/Moneycontrol.webp"
+    },
+    {
+      "id": 6,
+      "name": "India Today GK & Current Affairs",
+      "url": "https://www.indiatoday.in/education-today/gk-and-current-affairs",
+      "image": "images/category/IndiaToday.webp"
+    },
+    {
+      "id": 7,
+      "name": "Currentaffairs adda247",
+      "url": "https://currentaffairs.adda247.com/",
+      "image": "images/category/adda247.webp"
+    },
+    {
+      "id": 8,
+      "name": "AffairsCloud Current Affairs",
+      "url": "https://affairscloud.com/current-affairs/",
+      "image": "images/category/AffairsCloud.webp"
+    }
+  ],
+  "Health": [
+    {
+      "id": 1,
+      "name": "WebMD",
+      "url": "https://www.webmd.com/",
+      "image": "images/category/WebMD.webp"
+    },
+    {
+      "id": 2,
+      "name": "Mind Body Green",
+      "url": "https://www.mindbodygreen.com/",
+      "image": "images/category/MindBodyGreen.webp"
+    },
+    {
+      "id": 3,
+      "name": "Nutrition Facts",
+      "url": "https://nutritionfacts.org/",
+      "image": "images/category/NutritionFacts.webp"
+    },
+    {
+      "id": 4,
+      "name": "Ahealthblog",
+      "url": "https://www.ahealthblog.com/",
+      "image": "images/category/Ahealthblog.webp"
+    },
+    {
+      "id": 5,
+      "name": "Be Healthy Now",
+      "url": "https://www.behealthynow.co.uk/",
+      "image": "images/category/BeHealthyNow.webp"
+    },
+    {
+      "id": 6,
+      "name": "Food Politics",
+      "url": "https://www.foodpolitics.com/",
+      "image": "images/category/FoodPolitics.webp"
+    },
+    {
+      "id": 7,
+      "name": "You Must Get Healthy",
+      "url": "https://www.youmustgethealthy.com/",
+      "image": "images/category/YouMustGetHealthy.webp"
+    }
+  ],
+  "Lifestyle": [
+    {
+      "id": 1,
+      "name": "A Cup of Jo",
+      "url": "https://blogging.org/top-lifestyle-blogs/",
+      "image": "images/category/ACupofJo.webp"
+    },
+    {
+      "id": 2,
+      "name": "Cupcakes and Cashmere",
+      "url": "https://cupcakesandcashmere.com/",
+      "image": "images/category/CupcakesandCashmere.webp"
+    },
+    {
+      "id": 3,
+      "name": "A Beautiful Mess",
+      "url": "https://abeautifulmess.com/",
+      "image": "images/category/ABeautifulMess.webp"
+    },
+    {
+      "id": 4,
+      "name": "Barefoot Blonde",
+      "url": "https://amberfillerup.com/",
+      "image": "images/category/BarefootBlonde.webp"
+    },
+    {
+      "id": 5,
+      "name": "Gal Meets Glam",
+      "url": "https://juliaberolzheimer.com/",
+      "image": "images/category/GalMeetsGlam.webp"
+    },
+    {
+      "id": 6,
+      "name": "Pouted",
+      "url": "https://www.pouted.com/",
+      "image": "images/category/Pouted.webp"
+    },
+    {
+      "id": 7,
+      "name": "Conscious Lifestyle Magazine",
+      "url": "https://www.consciouslifestylemag.com/",
+      "image": "images/category/ConsciousLifestyleMagazine.webp"
+    },
+    {
+      "id": 8,
+      "name": "Camille Styles",
+      "url": "https://camillestyles.com/",
+      "image": "images/category/CamilleStyles.webp"
+    }
+  ],
+  "Sports": [
+    {
+      "id": 1,
+      "name": "India Today",
+      "url": "https://www.indiatoday.in/sports",
+      "image": "images/category/IndiaToday.webp"
+    },
+    {
+      "id": 2,
+      "name": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/sports",
+      "image": "images/news/english/hindustantimes.webp"
+    },
+    {
+      "id": 3,
+      "name": "Times Of India",
+      "url": "https://timesofindia.indiatimes.com/sports",
+      "image": "images/news/english/toi.webp"
+    },
+    {
+      "id": 4,
+      "name": "NDTV Sports",
+      "url": "https://sports.ndtv.com/",
+      "image": "images/category/NDTVSports.webp"
+    },
+    {
+      "id": 5,
+      "name": "The Indian Express",
+      "url": "https://indianexpress.com/section/sports/",
+      "image": "images/news/english/theindianexpress.webp"
+    },
+    {
+      "id": 6,
+      "name": "India TV",
+      "url": "https://www.indiatvnews.com/sports",
+      "image": "images/news/hindi/indiatv.webp"
+    },
+    {
+      "id": 7,
+      "name": "Zee News - Sports",
+      "url": "https://zeenews.india.com/sports",
+      "image": "images/news/hindi/zeenews.webp"
+    },
+    {
+      "id": 8,
+      "name": "The Hindu - Sports",
+      "url": "https://www.thehindu.com/sport/",
+      "image": "images/news/english/thehindu.webp"
     }
   ]
 }
